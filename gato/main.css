@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
+  justify-content: center;
+  align-items: center;
+}
+
+
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 10px 10px 10px 10px;
+  /background-color: darkgray;/
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url(fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
+  background-attachment: fixed;
+}
+
+a{
+  display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: red;
+}
+
+button{
+  margin: 0% -20px;
+}
+
+button:hover{
+  font-size: 2.2rem;
+  color: rgb(255, 0, 0);
+}
+
+.grid div {
+  height: 180px;
+  width: 180px;
+  font-size: 80px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+button {
+  padding: 20px;
+  font-size: 30px;
+  background: white;
+  box-shadow: 0;
+  border: 1px solid black;
+  border-radius: 30px;
+}

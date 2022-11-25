@@ -1,0 +1,148 @@
+:root {
+    --primary: #0599ee;
+    --secondary: #1fbd1a;
+    --light: #fff;
+    --dark: rgb(230, 16, 16);
+    --diabled: #000000;
+}
+
+
+.aver a{
+    display: inline;
+    text-decoration: none;  
+    color: white;
+    margin: 40px;
+}
+
+button{
+    background-color: #ee052c;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 10px 10px 10px 10px;
+    /background-color: darkgray;/
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(fondo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: var(--diabled);
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: rgb(58, 12, 184);
+    width: 100%;
+    max-width: 380px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button a{
+    display: inline;
+    text-decoration: none;  
+    color: white;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
